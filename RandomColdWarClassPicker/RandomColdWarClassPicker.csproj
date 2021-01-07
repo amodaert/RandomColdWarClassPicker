@@ -67,6 +67,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -83,6 +84,213 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Images\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Quartermaster.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\RPD.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\RPG-7.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SAM Turret.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Scavenger.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Semtex.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Sledgehammer.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Smoke Grenade.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Spycraft.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Stimshot.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Stoner 63.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Streetsweeper.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Stun Grenade.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Tactical Mask.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Tomahawk.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Tracker.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Trophy System.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Type 63.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\XM4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1911.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AK-47.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AK-74u.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Assassin.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Assault Pack.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Aug.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Bullfrog.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\C4.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Cigma 2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Cold Blooded.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Danger Close.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Decoy.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Diamantti.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Dmr 14.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Engineer.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FFar 1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Field Mic.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Flak Jacket.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Flashbang.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Forward Intel.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Frag.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Gallo SA12.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Gas Mine.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Gearhead.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Ghost.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Groza.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Gunfighter.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Gung-Ho.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Hauer 77.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Jammer.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Knife.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Krig 6.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\KSP 45.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Law Breaker.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\LW3 - Tundra.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\M16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\M60.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\M79.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\M82.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Mac-10.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Magnum.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Milano 821.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Molotov.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MP5.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Ninja.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Paranoia.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Pelington 703.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Perk Greed.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Proximity Mine.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\QBZ-83.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

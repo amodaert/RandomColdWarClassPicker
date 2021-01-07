@@ -166,7 +166,6 @@ namespace RandomColdWarClassPicker
 
         private void PickGuns()
         {
-            //oCWClass.Primary = PickPrimary();
             string wildcard = oCWClass.Wildcard;
             switch (wildcard)
             {
@@ -201,66 +200,52 @@ namespace RandomColdWarClassPicker
 
         private void PrintChosenStuff()
         {
-
-            String sPrimaryPB = "../Images/" + oCWClass.Primary + ".jpg";
             PrimaryPB.SizeMode = PictureBoxSizeMode.StretchImage;
-            PrimaryPB.Image = Image.FromFile(sPrimaryPB);
+            PrimaryPB.Image = PickImageFromResources(oCWClass.Primary);
             //PrimaryPB.ClientSize = new Size(225, 115);
 
-
-            String sSecondaryPB = "../Images/" + oCWClass.Secondary + ".jpg";
             SecondaryPB.SizeMode = PictureBoxSizeMode.StretchImage;
-            SecondaryPB.Image = Image.FromFile(sSecondaryPB);
+            SecondaryPB.Image = PickImageFromResources(oCWClass.Secondary);
 
-            String sTacticalPB = "../Images/" + oCWClass.Tactical + ".jpg";
             TacticalPB.SizeMode = PictureBoxSizeMode.StretchImage;
-            TacticalPB.Image = Image.FromFile(sTacticalPB);
+            TacticalPB.Image = PickImageFromResources(oCWClass.Tactical);
 
-            String sLethalPB = "../Images/" + oCWClass.Lethal + ".jpg";
             LethalPB.SizeMode = PictureBoxSizeMode.StretchImage;
-            LethalPB.Image = Image.FromFile(sLethalPB);
+            LethalPB.Image = PickImageFromResources(oCWClass.Lethal);
 
-            String sFieldUpgradePB = "../Images/" + oCWClass.FieldUpgrade + ".jpg";
             FieldUpgradePB.SizeMode = PictureBoxSizeMode.StretchImage;
-            FieldUpgradePB.Image = Image.FromFile(sFieldUpgradePB);
+            FieldUpgradePB.Image = PickImageFromResources(oCWClass.FieldUpgrade);
 
-            String sPerk1PB = "../Images/" + oCWClass.Perk1 + ".jpg";
             Perk1PB.SizeMode = PictureBoxSizeMode.StretchImage;
-            Perk1PB.Image = Image.FromFile(sPerk1PB);
+            Perk1PB.Image = PickImageFromResources(oCWClass.Perk1);
 
             if (oCWClass.Perk1_2 != "")
             {
-                String sPerk1_2PB = "../Images/" + oCWClass.Perk1_2 + ".jpg";
                 Perk1_2PB.SizeMode = PictureBoxSizeMode.StretchImage;
-                Perk1_2PB.Image = Image.FromFile(sPerk1_2PB);
+                Perk1_2PB.Image = PickImageFromResources(oCWClass.Perk1_2);
             }
 
-            String sPerk2PB = "../Images/" + oCWClass.Perk2 + ".jpg";
             Perk2PB.SizeMode = PictureBoxSizeMode.StretchImage;
-            Perk2PB.Image = Image.FromFile(sPerk2PB);
+            Perk2PB.Image = PickImageFromResources(oCWClass.Perk2);
 
             if (oCWClass.Perk2_2 != "")
             {
-                String sPerk2_2PB = "../Images/" + oCWClass.Perk2_2 + ".jpg";
                 Perk2_2PB.SizeMode = PictureBoxSizeMode.StretchImage;
-                Perk2_2PB.Image = Image.FromFile(sPerk2_2PB);
+                Perk2_2PB.Image = PickImageFromResources(oCWClass.Perk2_2);
             }
 
             ;
-            String sPerk3PB = "../Images/" + oCWClass.Perk3 + ".jpg";
             Perk3PB.SizeMode = PictureBoxSizeMode.StretchImage;
-            Perk3PB.Image = Image.FromFile(sPerk3PB);
+            Perk3PB.Image = PickImageFromResources(oCWClass.Perk3);
 
             if (oCWClass.Perk3_2 != "")
             {
-                String sPerk3_2PB = "../Images/" + oCWClass.Perk3_2 + ".jpg";
                 Perk3_2PB.SizeMode = PictureBoxSizeMode.StretchImage;
-                Perk3_2PB.Image = Image.FromFile(sPerk3_2PB);
+                Perk3_2PB.Image = PickImageFromResources(oCWClass.Perk3_2);
             }
 
-            String sWildcardPB = "../Images/" + oCWClass.Wildcard + ".jpg";
             WildcardPB.SizeMode = PictureBoxSizeMode.StretchImage;
-            WildcardPB.Image = Image.FromFile(sWildcardPB);
+            WildcardPB.Image = PickImageFromResources(oCWClass.Wildcard);
 
             PrimaryLabel.Text = oCWClass.Primary;
             SecondaryLabel.Text = oCWClass.Secondary;
@@ -331,6 +316,152 @@ namespace RandomColdWarClassPicker
             Perk3PB.Image = null;
             Perk3_2PB.Image = null;
             WildcardPB.Image = null;
+        }
+
+        private Bitmap PickImageFromResources(string item)
+        {
+            switch (item)
+            {
+                case "AK-47":
+                    return RandomColdWarClassPicker.Properties.Resources.AK_47;
+                case "AK-74u":
+                    return RandomColdWarClassPicker.Properties.Resources.AK_74u;
+                case "Assassin":
+                    return RandomColdWarClassPicker.Properties.Resources.Assassin;
+                case "Assault Pack":
+                    return RandomColdWarClassPicker.Properties.Resources.Assault_Pack;
+                case "AUG":
+                    return RandomColdWarClassPicker.Properties.Resources.Aug;
+                case "Bullfrog":
+                    return RandomColdWarClassPicker.Properties.Resources.Bullfrog;
+                case "C4":
+                    return RandomColdWarClassPicker.Properties.Resources.C4;
+                case "Cigma 2":
+                    return RandomColdWarClassPicker.Properties.Resources.Cigma_2;
+                case "Cold Blooded":
+                    return RandomColdWarClassPicker.Properties.Resources.Cold_Blooded;
+                case "Danger Close":
+                    return RandomColdWarClassPicker.Properties.Resources.Danger_Close;
+                case "Decoy":
+                    return RandomColdWarClassPicker.Properties.Resources.Decoy;
+                case "Diamantti":
+                    return RandomColdWarClassPicker.Properties.Resources.Diamantti;
+                case "DMR 14":
+                    return RandomColdWarClassPicker.Properties.Resources.Dmr_14;
+                case "Engineer":
+                    return RandomColdWarClassPicker.Properties.Resources.Engineer;
+                case "FFAR 1":
+                    return RandomColdWarClassPicker.Properties.Resources.FFar_1;
+                case "Field Mic":
+                    return RandomColdWarClassPicker.Properties.Resources.Field_Mic;
+                case "Flak Jacket":
+                    return RandomColdWarClassPicker.Properties.Resources.Flak_Jacket;
+                case "Flashbang":
+                    return RandomColdWarClassPicker.Properties.Resources.Flashbang;
+                case "Forward Intel":
+                    return RandomColdWarClassPicker.Properties.Resources.Forward_Intel;
+                case "Frag":
+                    return RandomColdWarClassPicker.Properties.Resources.Frag;
+                case "Gallo SA12":
+                    return RandomColdWarClassPicker.Properties.Resources.Gallo_SA12;
+                case "Gas Mine":
+                    return RandomColdWarClassPicker.Properties.Resources.Gas_Mine;
+                case "Gearhead":
+                    return RandomColdWarClassPicker.Properties.Resources.Gearhead;
+                case "Ghost":
+                    return RandomColdWarClassPicker.Properties.Resources.Ghost;
+                case "Groza":
+                    return RandomColdWarClassPicker.Properties.Resources.Groza;
+                case "Gunfighter":
+                    return RandomColdWarClassPicker.Properties.Resources.Gunfighter;
+                case "Gung-Ho":
+                    return RandomColdWarClassPicker.Properties.Resources.Gung_Ho;
+                case "Hauer 77":
+                    return RandomColdWarClassPicker.Properties.Resources.Hauer_77;
+                case "Jammer":
+                    return RandomColdWarClassPicker.Properties.Resources.Jammer;
+                case "Knife":
+                    return RandomColdWarClassPicker.Properties.Resources.Knife;
+                case "Krig 6":
+                    return RandomColdWarClassPicker.Properties.Resources.Krig_6;
+                case "KSP 45":
+                    return RandomColdWarClassPicker.Properties.Resources.KSP_45;
+                case "Law Breaker":
+                    return RandomColdWarClassPicker.Properties.Resources.Law_Breaker;
+                case "LW3 - Tundra":
+                    return RandomColdWarClassPicker.Properties.Resources.LW3___Tundra;
+                case "M16":
+                    return RandomColdWarClassPicker.Properties.Resources.M16;
+                case "M60":
+                    return RandomColdWarClassPicker.Properties.Resources.M60;
+                case "M79":
+                    return RandomColdWarClassPicker.Properties.Resources.M79;
+                case "M82":
+                    return RandomColdWarClassPicker.Properties.Resources.M82;
+                case "MAC-10":
+                    return RandomColdWarClassPicker.Properties.Resources.Mac_10;
+                case "Magnum":
+                    return RandomColdWarClassPicker.Properties.Resources.Magnum;
+                case "Milano 821":
+                    return RandomColdWarClassPicker.Properties.Resources.Milano_821;
+                case "Molotov":
+                    return RandomColdWarClassPicker.Properties.Resources.Molotov;
+                case "MP5":
+                    return RandomColdWarClassPicker.Properties.Resources.MP5;
+                case "Ninja":
+                    return RandomColdWarClassPicker.Properties.Resources.Ninja;
+                case "Paranoia":
+                    return RandomColdWarClassPicker.Properties.Resources.Paranoia;
+                case "Pelington 703":
+                    return RandomColdWarClassPicker.Properties.Resources.Pelington_703;
+                case "Perk Greed":
+                    return RandomColdWarClassPicker.Properties.Resources.Perk_Greed;
+                case "Proximity Mine":
+                    return RandomColdWarClassPicker.Properties.Resources.Proximity_Mine;
+                case "QBZ-83":
+                    return RandomColdWarClassPicker.Properties.Resources.QBZ_83;
+                case "Quartermaster":
+                    return RandomColdWarClassPicker.Properties.Resources.Quartermaster;
+                case "RPD":
+                    return RandomColdWarClassPicker.Properties.Resources.RPD;
+                case "RPG-7":
+                    return RandomColdWarClassPicker.Properties.Resources.RPG_7;
+                case "SAM Turret":
+                    return RandomColdWarClassPicker.Properties.Resources.SAM_Turret;
+                case "Scavenger":
+                    return RandomColdWarClassPicker.Properties.Resources.Scavenger;
+                case "Semtex":
+                    return RandomColdWarClassPicker.Properties.Resources.Semtex;
+                case "Sledgehammer":
+                    return RandomColdWarClassPicker.Properties.Resources.Sledgehammer;
+                case "Smoke Grenade":
+                    return RandomColdWarClassPicker.Properties.Resources.Smoke_Grenade;
+                case "Spycraft":
+                    return RandomColdWarClassPicker.Properties.Resources.Spycraft;
+                case "Stimshot":
+                    return RandomColdWarClassPicker.Properties.Resources.Stimshot;
+                case "Stoner 63":
+                    return RandomColdWarClassPicker.Properties.Resources.Stoner_63;
+                case "Streetsweeper":
+                    return RandomColdWarClassPicker.Properties.Resources.Streetsweeper;
+                case "Stun Grenade":
+                    return RandomColdWarClassPicker.Properties.Resources.Stun_Grenade;
+                case "Tactical Mask":
+                    return RandomColdWarClassPicker.Properties.Resources.Tactical_Mask;
+                case "Tomahawk":
+                    return RandomColdWarClassPicker.Properties.Resources.Tomahawk;
+                case "Tracker":
+                    return RandomColdWarClassPicker.Properties.Resources.Tracker;
+                case "Trophy System":
+                    return RandomColdWarClassPicker.Properties.Resources.Trophy_System;
+                case "Type 63":
+                    return RandomColdWarClassPicker.Properties.Resources.Type_63;
+                case "XM4":
+                    return RandomColdWarClassPicker.Properties.Resources.XM4;
+                case "1911":
+                    return RandomColdWarClassPicker.Properties.Resources._1911;
+            }
+            return null;
         }
 
         // Generates a random number within a range.      
